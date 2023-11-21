@@ -10,13 +10,12 @@ Source0:  https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe900
 %description
 Use Case Manager configuration for ALSA
 
-%prep -n %{name}-%{version}
-%autosetup -p1
+%prep
 
 %build
 
 %install
-tar xvzf *.tar.gz --strip-components=1 --wildcards "*/ucm" "*/ucm2"
+tar xvzf *.tar.gz --strip-components=1 --wildcards "*/ucm2"
 
 %files
 %{_datadir}/alsa/ucm2/*
