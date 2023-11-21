@@ -11,13 +11,11 @@ Use Case Manager configuration for ALSA
 
 %prep
 %autosetup -p1
-ls -a
 
 %build
 
 %install
-find ucm2 -type f -iname "*.conf" -exec install -vDm 644 {} "%{buildroot}%{_datadir}/alsa/"{} \;
-find ucm2 -type l -iname "*.conf" -exec cp -dv {} "%{buildroot}%{_datadir}/alsa/"{} \;
+tar xvzf *.tar.gz -C %{buildroot}%{_datadir}/alsa/ --strip-components=1 --wildcards "*/ucm" "*/ucm2"
 
 %files
 %{_datadir}/alsa/ucm2/*
