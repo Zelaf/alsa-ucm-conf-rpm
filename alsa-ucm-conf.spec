@@ -15,7 +15,7 @@ Use Case Manager configuration for ALSA
 %build
 
 %install
-tar xvzf *.tar.gz -C %{buildroot}%{_datadir}/alsa/ --strip-components=1 --wildcards "*/ucm" "*/ucm2"
+tar xvzf *.tar.gz --strip-components=1 --wildcards "*/ucm" "*/ucm2"
 
 %files
 %{_datadir}/alsa/ucm2/*
