@@ -9,7 +9,7 @@ Source0:  https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe900
 %description
 Use Case Manager configuration for ALSA
 
-%prep
+%prep -n %{name}-%{version}
 %autosetup -p1
 
 %build
