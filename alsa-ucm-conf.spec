@@ -17,7 +17,7 @@ Newer Use Case Manager configurations for ALSA based on the GitHub commit archiv
 
 %install
 mkdir -p %{buildroot}/usr/share/alsa
-tar xvzf %{SOURCE0} -C /usr/share/alsa --strip-components=1 --wildcards "*/ucm2"
+tar xvzf %{SOURCE0} -C %{buildroot}/usr/share/alsa --strip-components=1 --wildcards "*/ucm2"
 
 %files
 %{_datadir}/alsa/ucm2/*
