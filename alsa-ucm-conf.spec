@@ -5,17 +5,19 @@ Release:	1
 License:	BSD 3-clause
 BuildArch:	noarch
 Provides: alsa-ucm
+Requires:  alsa-lib
 Source0:  https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe9009f44547b91d60a244f735d81.tar.gz
-
+URL:  https://github.com/Zelaf/alsa-ucm-conf-rpm-spec
 %description
-Use Case Manager configuration for ALSA
+Newer Use Case Manager configurations for ALSA based on the GitHub commit archives.
 
 %prep
+mkdir -p %{buildroot}/usr/share/alsa
 
 %build
 
 %install
-tar xvzf *.tar.gz --strip-components=1 --wildcards "*/ucm2"
+tar xvzf %{SOURCE0} -C %{buildroot}/usr/share/alsa --strip-components=1 --wildcards "*/ucm2"
 
 %files
 %{_datadir}/alsa/ucm2/*
