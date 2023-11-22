@@ -1,5 +1,5 @@
 Name:		alsa-ucm-conf
-Summary:	Use Case Manager configuration for ALSA
+Summary:	Newer Use Case Manager configurations for ALSA
 Version:	23adf5a
 Release:	1
 License:	BSD 3-clause
@@ -10,6 +10,8 @@ Source0:    https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe9
 URL:        https://github.com/Zelaf/alsa-ucm-conf-rpm-spec
 %description
 Newer Use Case Manager configurations for ALSA based on the GitHub commit archives.
+
+New releases will be made based on GitHub commits.
 
 %prep
 
