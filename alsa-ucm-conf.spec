@@ -1,10 +1,9 @@
-Name:		alsa-ucm-conf
+Name:		alsa-ucm
 Summary:	Newer Use Case Manager configurations for ALSA
 Version:	23adf5a
 Release:	1
 License:	BSD 3-clause
 BuildArch:	noarch
-Provides:   alsa-ucm
 Requires:   alsa-lib
 Source0:    https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe9009f44547b91d60a244f735d81.tar.gz
 URL:        https://github.com/Zelaf/alsa-ucm-conf-rpm-spec
