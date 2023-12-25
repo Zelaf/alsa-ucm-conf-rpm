@@ -1,6 +1,6 @@
 Name:		alsa-ucm
 Summary:	Newer Use Case Manager configurations for ALSA
-Version:	23adf5a
+Version:	5b66bd9
 Release:	2
 License:	BSD 3-clause
 BuildArch:	noarch
