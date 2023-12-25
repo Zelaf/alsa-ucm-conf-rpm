@@ -1,11 +1,11 @@
 Name:		alsa-ucm
 Summary:	Newer Use Case Manager configurations for ALSA
 Version:	23adf5a
-Release:	1
+Release:	2
 License:	BSD 3-clause
 BuildArch:	noarch
 Requires:   alsa-lib
-Source0:    https://github.com/alsa-project/alsa-ucm-conf/archive/23adf5a368abe9009f44547b91d60a244f735d81.tar.gz
+Source0:    https://github.com/Zelaf/alsa-ucm-conf/archive/5b66bd9103e9154eb3b1f0ad578ea5134867a71c.tar.gz
 URL:        https://github.com/Zelaf/alsa-ucm-conf-rpm-spec
 %description
 Newer Use Case Manager configurations for ALSA based on the GitHub commit archives.
@@ -22,3 +22,7 @@ tar xvzf %{SOURCE0} -C %{buildroot}/usr/share/alsa --strip-components=1 --wildca
 
 %files
 %{_datadir}/alsa/ucm2/*
+
+%changelog
+* Mon Dec 25 2023 Zelaf
+- Edited Behringer UMC404HD to have different priorities.
